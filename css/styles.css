@@ -1,0 +1,705 @@
+* {
+    border:0;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    font-family: 'Playfair Display', serif;
+}
+.menu__links {
+    width: 100%;
+    height: 74px;
+    background-color: black;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__links a img {
+    width: 100px;
+    height: 60px;
+}
+.menu__links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__links ul li a {
+    color: rgb(207, 200, 200);
+    text-decoration:none;
+    font-size: 1.3rem;
+    padding: 5px 20px;
+}
+.menu__links ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.imagen-fondo--body {
+    background-image: url(../multimedia/img/probarfavi.png);  
+}
+.portada-registro {
+    background-image: url(../multimedia/img/portada-registro.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 100px;
+}
+.portada-registro h1 {
+    color:white;
+    width: 100%;
+    height: 676px;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-weight: 900;
+    text-shadow: 3px 5px 2px #474747, 32px 20px 9px rgba(255,255,255,0.23);
+    color: #FFFFFF;
+}
+.registro-bloque-Pr {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 100px 0;
+    align-items: center;
+}
+.registro__pag-textos {
+    background-color: #e4e3e3e0;
+    padding: 20px;
+    width: 570px;
+    height: 450px;
+    border-radius: 4px;
+    margin-right: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.registro__pag-textos h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin: 20px 0;
+    color:  rgb(228, 132, 6);
+    font-weight: bold;
+}
+.contenedorForm {
+    width: 700px;
+    height: 930px;
+    background-color:  #3d4953;
+    border-radius: 4px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenedorForm h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formulario__term-cond {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.formulario__input {
+    width: 100%;
+    background-color: #bbc3cc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(228, 132, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.formulario__input:focus {
+    background-color: sandybrown;
+}
+.check {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.check label {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.check input {
+    margin-right: 30px;
+    background-color: #bbc3cc;
+    border-radius: 4px;
+    border: 1px solid rgb(228, 132, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #777f88;
+}
+.tipologias input:focus {
+    background-color: sandybrown;
+}
+.tipologias h4 {
+    margin-bottom: 0;
+}
+.tipologias p {
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.tipologias input {
+    background-color: #bbc3cc;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 4px 16px 3px;
+    border: 1px solid rgb(228, 132, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.medioDePago {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.medioDePago select {
+    width: 100px;
+    margin-right: 30px;
+    background-color: #bbc3cc;
+    border-radius: 4px;
+    border: 1px solid rgb(228, 132, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #777f88;
+}
+.medioDePago select:focus {
+    background-color: sandybrown;
+}
+.medioDePago label {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+#cantCuotas {
+    width: 150px;
+}
+.formulario__term-cond {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formulario__boton {
+    width: 100%;
+    background-color:  rgb(228, 132, 6);
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.verReserva {
+    margin-top: 10px;
+    width: 50%;
+    background-color:  rgb(228, 132, 6);
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+}
+
+.bloqueReserva {
+    display: flex;
+    justify-content: center;
+}
+.comprReserva {
+    width: 600px;
+    height: 640px;
+    background-color: #84929e;
+    border-radius: 15px;
+    box-shadow: 0px 10px 13px -7px #f0eded, 0px 13px 10px 5px rgba(0,0,0,0.15);  
+    border: solid 3px rgb(90, 85, 85) ;
+    display: none;
+    position: relative;
+}
+.comprReserva h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.comprReserva input {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  rgb(228, 132, 6);
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.comprobante__reserva {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.comprobante__reserva h4 {
+    font-size: 22px;
+}
+.comprobante__reserva p {
+    margin: 5px;
+    font-weight: 600;
+}
+
+.datos_mail h2 {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+.foot {
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.foot__img {
+    height: 150px;
+}
+.foot__img img {
+    width: 160px;
+    height: 100px;
+}
+.foot__contacto{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    align-items: center;
+    gap: 10px;
+}
+.foot__contacto span {
+    font-size: 14px;
+    font-weight: 900;
+}
+.foot__boton {
+    background-color: rgb(228, 132, 6) ;
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px  rgb(228, 132, 6);
+}
+.foot__boton span {
+    z-index: 2;
+}
+.foot__boton::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color:none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease-in-out all;
+    border-radius: 100px;
+}
+.foot__boton:hover::after {
+    transform: scale(200);
+    background-color: black; 
+}
+.foot__grid {
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.foot__bloque1 {
+    grid-column: 1/2;
+}
+.foot__bloque2 {
+    grid-column: 2/3;
+}
+.foot__bloque3 {
+    grid-column: 3/4;
+}
+.foot__bloque4 {
+    grid-column: 4/5;
+}
+.foot--bloques {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+.foot--subtitulo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.d-block {
+    height: 676px;
+}
+.carousel-caption {
+    font-size: 35px;
+}
+.carousel-caption h5 {
+    font-size: 100%;
+}
+.carousel-control-prev{
+    margin-top: 74px;
+}
+.carousel-control-next{
+    margin-top: 74px;
+}
+
+.tarjetas_hotel {
+    height: auto;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjetas_hotel__avisos1 {
+    width: 1500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px
+}
+.tarjetas_hotel__textos {
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.tarjetas_hotel__textos h3 {
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.tarjetas_hotel__textos p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.tarjetas_hotel__textos img {
+    max-width: 100%;
+    height: 700px; 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 13px 10px 5px rgba(0,0,0,0.15);          
+}
+.tarjetas_hotel__avisos2 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tarjeta_tipo-hab {
+    width: 430px;
+    height: 644px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    margin: 65px 15px;
+    transition: 0.3s ease;
+}
+.tarjeta_tipo-hab:hover {
+    box-shadow: 0 7px 19px 0 #DBDBDB;
+}
+.tarjeta_tipo-hab__header img {    
+max-width: 100%;
+height: 360px;       
+}
+.tarjeta_tipo-hab__footer {
+    color:#000000;
+    font-size: 18px;
+    padding: 15px;
+}
+.tarjeta_tipo-hab__footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.grilla_tipo-hab {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+.grid1,.grid3,.grid5,.grid7,.grid9 {
+    font-weight: bold;
+    font-size: 16px;                 
+}
+.grid2,.grid4,.grid6,.grid8,.grid10 {
+    font-size: 16px;             
+} 
+.tarjeta_tipo-hab-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.tarjeta_tipo-hab-text button {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(228, 132, 6);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btnReserva {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(228, 132, 6);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.tarjetas_hotel__avisos2__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1600px;
+    margin-bottom: 25px;
+}  
+.tarjetas_hotel__avisos2__text h3 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+}
+.tarjetas_hotel__avisos2__text p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.tarjetas_hotel__avisos3 {
+    width: 1500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tarjetas_hotel__avisos3 img {
+    max-width: 100%;
+    height: 700px; 
+    margin-bottom: 25px;
+    box-shadow: 0px 10px 13px -7px #000000, 0px 13px 10px 5px rgba(0,0,0,0.15);  
+}
+.tarjetas_hotel__textos {
+    text-align: center;
+}
+
+.tarjetas_hotel__textos h3 {
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    margin-bottom: 10px;  
+}
+.tarjetas_hotel__textos p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+                
+}
+#contenedorPrincipal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.65);
+}
+#contenedorSecundario {
+    width: 1000px;
+    height: 700px;
+    border: 2px #f3f3f3 solid;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#contenedorSecundario button {
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: transparent;
+    border: none;
+}
+#imagen-activa {
+    width: 100%;
+    height: 100%;
+}
+#btn-cierra {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 1.5rem;
+    padding: 3px 8px;
+}
+#btn-retroceder {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    font-size: 2rem;
+    padding: 3px 8px;
+}
+#btn-adelantar {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    font-size: 2rem;
+    padding: 3px 8px;
+}
+.registro--modificador {
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.registro {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.registro__textos {
+        text-align: center;
+
+}
+.registro__inputs input {
+    width: 250px;
+    height: 45px;
+    border-radius: 50px;
+    padding: 0 15px;
+    margin-right: 5px;
+}
+.registro__boton {
+    background-color: rgb(228, 132, 6);
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px rgb(228, 132, 6);
+}
+.registro__boton span {
+    z-index: 2;
+}
+.registro__boton::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background-color:none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease-in-out all;
+    border-radius: 100px; 
+}
+.registro__boton:hover::after {
+    transform: scale(200);
+    background-color: black;        
+}
+.registro__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registro__links {
+    margin-top: 10px;
+    font-size: 30px;
+    word-spacing: 10px;
+}         
+.registro__links a {
+    color: white;
+}
+
+#promoCode {
+    transition: font-size 0.5s ease-in-out;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.swal2-modal {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    background-color: rgb(218, 181, 134);
+    font-size: large;
+    width: 600px;
+}

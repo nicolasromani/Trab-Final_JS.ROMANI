@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Reservas Online Hotel Centenario</title>
+</head>
+<body class="imagen-fondo--body">
+    <header>
+        <div class="menu">
+            <div class="menu__links">
+                <a href="./index.html"><img src="./multimedia/img/logo-pnglisto.png" alt="Logo Centenario"></a>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="./1.hotel.html">Hotel</a></li>
+                    <li><a href="">Experiencia Centenario </a></li>
+                    <li><a href="./index.html">Reservas</a></li>
+                    <li><a href="">Conocenos</a></li>
+                </ul>
+            </div>
+            <div class="portada-registro">
+                <h1>"Tus vacaciones como nunca antes las viviste - Se parte de la Familia Centenario"</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="registro-bloque-Pr">
+            <div class="registro__pag-textos">
+                <span>Se parte de nuestra familia, vivi Corrientes como nunca antes..</span>
+                <h3>Experiencia Centenario</h3>
+                <p>Déjanos compartir contigo la alegría de nuestra empresa hotelera al crear un emocionante programa de suscripción. Diseñado para brindarte la mejor experiencia, con servicios y atención exclusiva, promociones irresistibles y descuentos en fechas especiales. Nuestro programa te ofrece un paquete completo, donde todo está cuidadosamente preparado para que tu única misión sea relajarte y descansar. ¡Ven y disfruta de momentos inolvidables con nosotros!</p>
+            </div>
+            <form action="" id="contForm">
+                <div class="contenedorForm">
+                    <h4>Reserve AHORA usando el codigo<br> <span id="promoCode" style="color: rgb(228, 132, 6)">CENTE10OFF</span><br> y obtene un 10% de descuento en tu proxima estadia!</h4>
+                    <input class="formulario__input" type="text" name="full-name" id="fullname" placeholder="Ingrese su nombre completo">
+                    <input class="formulario__input" type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+                    <input class="formulario__input" type="email" name="email" id="email" placeholder="Ingrese su correo">
+                    <div class="check">
+                        <label for="check-in">Check-In</label>
+                        <input type="date" name="check-in" id="checkin">
+                        <label for="check-out">Check-Out</label>
+                        <input type="date" name="check-out" id="checkout">
+                    </div>
+                    <div class="tipologias">
+                        <h4>Tipologias</h4>
+                        <p>Junior</p>
+                        <input type="number" placeholder="Simple $2500" id="jun.sim">
+                        <input type="number" placeholder="Doble $3500" id="jun.dob">
+                        <input type="number" placeholder="Confort $4500" id="jun.conf">
+                        <p>Superior</p>
+                        <input type="number" placeholder="Simple $3500" id="sup.sim">
+                        <input type="number" placeholder="Doble $4500" id="sup.dob">
+                        <input type="number" placeholder="Confort $5500" id="sup.conf">
+                        <p>Deluxe</p>
+                        <input type="number" placeholder="Simple $5500" id="del.sim">
+                        <input type="number" placeholder="Doble $6500" id="del.dob">
+                        <input type="number" placeholder="Confort $7500" id="del.conf">
+                    </div>
+                    <input class="formulario__input" id="discountCupon" type="text" name="cupon" placeholder="Ingrese codigo de descuento">
+                    <div class="medioDePago">
+                        <label for="medio">Medio de pago</label>
+                        <select name="medio" id="medioDePago">
+                            <option value="Debito">Debito</option>
+                            <option value="Credito">Credito</option>
+                        </select>
+                        <label for="cuotas">Cant de Cuotas</label>
+                        <select name="cuotas" id="cantCuotas">
+                            <option value="una">1 Sin Interes</option>
+                            <option value="tres">3 con 10%</option>
+                            <option value="seis">6 Sin Interes</option>
+                            <option value="doce">12 con 20%</option>
+                        </select>
+                    </div>
+                    <div class="formulario__term-cond">
+                        <label for="">Aceptas terminos y condiciones</label>
+                        <input type="checkbox" name="Term-Cond" id="checkBox" required>
+                    </div>
+                    <button class="formulario__boton" id="book" type="button">Reservar</button>
+                    <button class="verReserva" id="btnReserva" type="button">Ver Reserva</button>
+                </div>
+            </form >
+        </div>
+        <div class="bloqueReserva">
+            <section id="abrirComprobante" class="comprReserva">
+                <h3>Comprobante de reserva</h3>
+                    <div id="contenedorDeDatos">
+
+                    </div>
+                <input id="cerrarComprobante" type="button" value="Cerrar">
+            </section> 
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="foot__img">
+                <a href=""><img src="./multimedia/img/logo-pnglisto-black.png" alt="Logo Centenario"></a>
+            </div>
+            <div class="foot__contacto">
+                <span>Necesitas ayuda?</span>
+                <button class="foot__boton"><span>CONTACTANOS</span></button>
+            </div>
+            <div class="foot__grid">
+                <div class="foot__bloque1 foot--bloques">
+                    <span class="foot--subtitulo">Atencion al cliente</span>
+                    <span>Pagos</span>
+                    <span>Reembolsos y garantias</span>
+                    <span>Terminos y servicios</span>
+                    <span>Politicas de privacidad</span>
+                </div>
+                <div class="foot__bloque2 foot--bloques">
+                    <span class="foot--subtitulo">La Empresa</span>
+                    <span>Acerca de nosotros</span>
+                    <span>Marcas registradas</span>
+                    <span>Afiliados</span>
+                    <span>Inversiones</span>
+                </div>
+                <div class="foot__bloque3 foot--bloques">
+                    <span class="foot--subtitulo">Servicios</span>
+                    <span>Promociones</span>
+                    <span>Descuentos</span>
+                    <span>Vacaciones</span>
+                    <span>Vouchers</span>
+                </div>
+                <div class="foot__bloque4 foot--bloques">
+                    <span class="foot--subtitulo">Que hacer</span>
+                    <span>Turismo</span>
+                    <span>Que visitar</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./JavaScript/trabajoFinal.js"></script>
+</html>
